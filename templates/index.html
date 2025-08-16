@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box">
+            {% for sender, message in history %}
+                <div class="message">
+                    <strong>{{ sender }}:</strong> {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+
+        <form method="post" class="chat-input">
+            <input type="text" name="user_message" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

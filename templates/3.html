@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Chatbot</title>
+    <link rel="stylesheet" href="/static/new.css">
+</head>
+<body>
+    <h1 class="text">📄 PDF CHATBOT</h1>
+
+    <form class= "form"  action="/upload-pdf/" method="post" enctype="multipart/form-data">
+        <input class ="input"  type="file" name="file" accept="application/pdf" required>
+        <button class= "button"  type="submit">Upload PDF</button>
+    </form>
+
+    <!-- {% if text %}
+        <h2>Extracted Text:</h2>
+        <pre>{{ text }}</pre>
+    {% endif %} -->
+</body>
+</html>
