@@ -1,0 +1,40 @@
+body{
+    background-image: url("generated-image (1).png");
+    height: 100%;
+
+}
+
+
+
+.text{
+   /* background-color: rgb(3, 7, 20); */
+   padding-left: 32%;
+   height: 20vh;
+   font-size: 50px;
+   color: whitesmoke;
+   font-weight: bolder;
+}
+
+
+.form{
+    /* background-color: aqua;  */
+
+    color: wheat;
+    padding-left: 70vh;
+    
+    
+    
+   
+}
+
+
+
+.input{
+    background-color: rgb(16, 16, 240);
+    /* height:10vh; */
+    color:black
+    
+    
+    
+}
+ 
