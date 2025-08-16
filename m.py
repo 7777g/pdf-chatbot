@@ -26,6 +26,12 @@ chat_history= []
 # --- Upload page ---
 @app.get("/", response_class=HTMLResponse)
 def get_form(request: Request):
+    global chat_history
+    global state
+    state["context"]=""
+    state["text"]=""
+    state["question"]=""
+    chat_history=[]
     return templates.TemplateResponse("3.html", {"request": request})
 
 # --- Handle PDF upload, then redirect to /chat ---
@@ -106,5 +112,5 @@ def chat_submit(request: Request, user_message: str = Form(...)):
 
 
 
-if __name__=="__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
+
