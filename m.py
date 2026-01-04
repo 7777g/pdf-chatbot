@@ -107,10 +107,8 @@ def chat_submit(request: Request, user_message: str = Form(...)):
         "request": request,
         "history": chat_history,
         "pdf_loaded": True,
-
     })
 
 
-
-
-
+if __name__ == "__main__":
+    app.run()
