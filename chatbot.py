@@ -21,7 +21,7 @@ from PyPDF2 import PdfReader
 load_dotenv()
 
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", temperature=0.2)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.2)
 class chatbot(TypedDict):
     qwery:str
     question:str
@@ -87,9 +87,3 @@ final_prompt = PromptTemplate(
       message:{message}
     ,
     input_variables = ['pdf-text', 'question','message']""")
-
-
-
-    
-
-    
